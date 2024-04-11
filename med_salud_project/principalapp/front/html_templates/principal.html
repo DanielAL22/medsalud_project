@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,93 +32,13 @@
 
 <body>
     {% include "top_nav.html" %}
-    {% include "carousel.html" %}
-    {% block contenedor %}
 
+    {% include "carousel.html" %}
+
+    {% block contenedor %}
     {% endblock %}
 
-
-    <section id="idOpciones" class="mb-5 mb-lg-0">
-        <div class="container pt-5 mb-5">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center mt-3 mt-md-0">
-                    <!--Tarjeta-->
-                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
-
-                        <i class="fa-solid fa-calendar-check"></i>
-                        <p>Reserva de horas</p>
-                    </div>
-
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
-                    <!--Tarjeta-->
-                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
-
-                        <i class="fa-solid fa-vial"></i>
-                        <p>Laboratorio</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
-                    <!--Tarjeta-->
-                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
-
-                        <i class="fa-solid fa-square-poll-vertical"></i>
-                        <p>Imagenología</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-lg-5">
-
-
-
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
-                    <!--Tarjeta-->
-                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
-
-                        <i class="fa-solid fa-capsules"></i>
-                        <p>Recetas</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
-                    <!--Tarjeta-->
-                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
-
-                        <i class="fa-solid fa-clipboard"></i>
-                        <p>Licencias</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
-                    <!--Tarjeta-->
-                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5 mb-sm-2">
-
-                        <i class="fa-solid fa-folder-open"></i>
-                        <p>Historial médico</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="mt-2">
-        <div class="container">
-            <div class="row pt-3 pb-3 justify-content-center">
-                <div class="col-xl-6 text-center d-flex align-items-center justify-content-center">
-                    <p class="m-3">Síguenos</p>
-                    <a href="https://www.linkedin.com/" target="_blank" class="social-link"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/" target="_blank" class="social-link"><i
-                            class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank" class="social-link"><i
-                            class="fa-brands fa-square-facebook"></i></a>
-                </div>
-                <div class="col-xl-6 text-center d-flex align-items-center justify-content-center">
-                    <p class="m-3">© 2024 Clínica MEDSALUD</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
+    {% include "footer.html" %}
 
 
 
