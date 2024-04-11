@@ -1,0 +1,40 @@
+.custom-navbar {
+    background-color: rgb(41, 128, 185);
+    color: white;
+    font-size: large;
+}
+
+
+
+.custom-carousel {
+    width: 100vw; /* Ancho deseado */
+    height: 550px; /* Alto deseado */
+    object-fit: cover; /* Para que la imagen cubra todo el espacio sin deformarse */
+}
+
+.containerIcon {
+    text-align: center;
+    background-color: white;
+    font-size: 22px;
+    color: rgb(41, 128, 185);
+}
+
+.containerIcon i {
+    font-size: 100px;
+}
+
+footer {
+    background-color: rgb(41, 128, 185);
+    color: white;
+}
+
+.social-link {
+    color: white; 
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    margin-right: 10px;
+}
+
+footer p {
+    font-size: 20px;
+}
