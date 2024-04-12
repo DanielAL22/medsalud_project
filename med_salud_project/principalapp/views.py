@@ -6,6 +6,9 @@ def hola(request):
     return HttpResponse("<h1>Hola Mundo MedSalud</h1>")
 
 def principal(request):
+    return render(request=request, template_name= "principal.html", context={})
+
+def paciente(request):
     return render(request=request, template_name= "pages/opciones_pac.html", context={})
 
 def medico(request):

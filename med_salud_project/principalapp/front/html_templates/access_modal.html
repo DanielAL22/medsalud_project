@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="modal fade" id="idModalAcceso" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body mt-3">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="usuario" placeholder="Ingresa tu RUT">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p>¿Olvidaste tu contraseña?</p>
+                            <p>Regístrate</p>
+                        </div>
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!--Importación JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
     <!--Importación Font Awesome-->
     <script src="https://kit.fontawesome.com/0ffea1bd40.js" crossorigin="anonymous"></script>
 
@@ -25,7 +28,7 @@
 
 
     <!-- Script de JS -->
-    <!-- <script src="script.js"></script> -->
+    <script src="{% static 'js/principal.js' %}"></script>
 
 
 </head>
@@ -40,8 +43,7 @@
 
     {% include "footer.html" %}
 
-
-
+    {% include "access_modal.html" %}
 
 
 </body>

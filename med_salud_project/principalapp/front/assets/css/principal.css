@@ -5,7 +5,6 @@
 }
 
 
-
 .custom-carousel {
     width: 100vw; /* Ancho deseado */
     height: 550px; /* Alto deseado */
@@ -19,9 +18,15 @@
     color: rgb(41, 128, 185);
 }
 
+.containerIcon:hover {
+    background-color: white;
+    color: grey;
+    }
+
+
 .containerIcon i {
-    font-size: 100px;
-}
+        font-size: 100px;
+    }
 
 footer {
     background-color: rgb(41, 128, 185);
@@ -33,6 +38,10 @@ footer {
     text-decoration: none;
     font-size: 20px; /* Ajusta el tamaño según tus preferencias */
     margin-right: 10px;
+}
+
+.social-link:hover {
+    color: grey
 }
 
 footer p {
