@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, "principalapp/front/html_templates")],
-        'APP_DIRS': True,
+        'APP_DIRS': True,  # significa que django buscará templates en la carpeta con el mismo nombre "templates" dentro de cada aplicación instalada
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
