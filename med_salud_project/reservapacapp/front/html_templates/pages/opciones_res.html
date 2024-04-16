@@ -1,0 +1,27 @@
+{% extends "principal_pac.html"%}
+{% block contenedor %}
+
+<section id="idOpciones" class="mb-5 mb-lg-0">
+    <div class="container pt-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+                <a href="#">
+                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Reservar hora</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+                <a href="http://127.0.0.1:8000/paciente/reserva/buscar/">
+                    <div class="containerIcon mb-5 mb-md-0 mb-lg-0 mb-xl-0 mr-md-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Buscar o anular reserva</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

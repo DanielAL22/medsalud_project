@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Importación JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!--Importación Font Awesome-->
+    <script src="https://kit.fontawesome.com/0ffea1bd40.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- BT CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.13.1/bootstrap-table.min.css">
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- BT JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.13.1/bootstrap-table.min.js"></script>
+
+    <!-- CSS propio -->
+    <link href="{% static 'css/principal_pac.css' %}" rel="stylesheet" type="text/css" />
+
+
+    <!-- Script de JS -->
+    <script src="{% static 'js/principal.js' %}"></script>
+
+
+</head>
+
+<body>
+    {% include "top_nav_pac.html" %}
+
+
+    {% block contenedor %}
+    {% endblock %}
+
+    {% include "footer.html" %}
+
+    {% include "access_modal.html" %}
+
+
+</body>
+
+</html>

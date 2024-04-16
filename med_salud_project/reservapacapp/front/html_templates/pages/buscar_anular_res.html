@@ -1,0 +1,37 @@
+{% extends "principal_pac.html"%}
+{% block contenedor %}
+
+<section id="idBuscarReserva" class="mb-5 mb-lg-0 mt-5">
+    <div class="container">
+        <table 
+        data-toggle="table" 
+        data-click-to-select="true"
+        data-pagination="true">
+            <thead>
+            <tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <!-- <th data-checkbox="true" data-checkbox-enabled="false"></th> -->
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Médico</th>
+                <th>Planta</th>
+                <th>Box</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for reserva in resultados_busqueda%}
+                    <tr>
+                        <td></td>
+                        <td>{{reserva.fecha}}</td>
+                        <td>{{reserva.hora}}</td>
+                        <td>{{reserva.medico}}</td>
+                        <td>{{reserva.planta}}</td>
+                        <td>{{reserva.box}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+{% endblock %}

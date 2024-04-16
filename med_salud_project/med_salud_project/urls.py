@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from principalapp.views import hola, principal, paciente, medico, administrador
+from reservapacapp.views import hola_paciente, principal_pac, buscar_reserva
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,7 @@ urlpatterns = [
     path('paciente/', paciente, name='paciente'),
     path('medico/', medico, name='medico'),
     path('administrador/', administrador, name='administrador'),
+    path('paciente/hola_mundo/', hola_paciente),
+    path('paciente/reserva/', principal_pac),
+    path('paciente/reserva/buscar/', buscar_reserva),
 ]

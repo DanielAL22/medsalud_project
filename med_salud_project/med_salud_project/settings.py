@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'principalapp.apps.PrincipalappConfig',
+    'reservapacapp.apps.ReservapacappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +57,8 @@ ROOT_URLCONF = 'med_salud_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "principalapp/front/html_templates")],
+        'DIRS': [os.path.join(BASE_DIR, "principalapp/front/html_templates"),
+                 os.path.join(BASE_DIR, "reservapacapp/front/html_templates")],
         'APP_DIRS': True,  # significa que django buscará templates en la carpeta con el mismo nombre "templates" dentro de cada aplicación instalada
         'OPTIONS': {
             'context_processors': [
@@ -118,7 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "principalapp/front/assets"),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "principalapp/front/assets"),
+                    os.path.join(BASE_DIR, "reservapacapp/front/assets"))
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
