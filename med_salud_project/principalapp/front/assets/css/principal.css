@@ -29,6 +29,11 @@
     }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Color de fondo del footer */
+    /* Otros estilos según sea necesario */
     background-color: rgb(41, 128, 185);
     color: white;
 }
@@ -47,3 +52,16 @@ footer {
 footer p {
     font-size: 20px;
 }
+
+.custom-container-paciente {
+    background-color: rgb(41, 128, 185);
+    color: white;
+}
+
+
+
+/* ################################## */
+/* Elimina el subrayado del enlace */
+/* a {
+    text-decoration: none; 
+} */
